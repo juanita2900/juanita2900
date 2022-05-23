@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_6_landing_page_portafolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+</head>
+<body>
+
+
+    <nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+                <h1><a href="#seccion1">JUANITA</a></h1>
+            </div>
+            <ul>
+                <li><a href="#seccion2">REFERENTES</a></li>
+                <li><a href="#seccion3">TRABAJOS</a></li>
+                <li><a href="#seccion4">UBICACIÓN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="bienvenida" id="seccion1">
+        <div class="wrap">
+            <article class="info">
+                <h1>Juanita Torres</h1>
+                <p>
+                Soy una mujer expontanea y alegre, siempre intento dejar todo en lo que hago
+                sea en el baile, en mis diseños y en cualquier otra cosa que la vida traiga a mi.
+                Te invito a ver mi portafolio para que puedas conocer un poco más de mi y de lo que hago.
+                </p>
+                <a href="https://www.instagram.com/_juanitabonita_/" target="_bank">Instagram</a>
+            </article>
+            <a href="#seccion2">
+                <div class="down animate__animated animate__backInDown animate__infinite	infinite">
+                    <i class="fa-solid fa-circle-chevron-down"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+     
+
+<section class="servicios" id="seccion2">
+    <div class="wrap">
+        <div class="intro">
+        <h1>REFERENTES</h1>
+        <p>
+            Estas son algunas imágenes que he llegado a utilizar como referencias para mi trabajo,
+            me gustan porque me ayudan a inspirarme y hacer aún mucho mejor mis ilustraciones y diseños.
+        </p>
+        </div>
+         <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="imgs/slider1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="imgs/slider2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="imgs/slider3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="imgs/slider4.jpeg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+          
+    </div>
+</section>
+
+<section class="trabajos" id="seccion3">
+    <div class="wrap">
+        <div class="parrafo">
+            <h1>TRABAJOS</h1>
+            <p>
+                Estas son tres muestras de los diferentes trabajos que he realizado, como pudiste leer en la introducción mis tres principales pasiones son el diseño, la danza y la ilustración.
+            </p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="imgs/diseño.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="imgs/danza.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="imgs/ilus.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<section class="ubicame" id="seccion4">
+    <div class="wrap">
+        <h1>UBICACIÓN</h1>
+        <p>Si quieres contactarme puedes llegar a la siguiente direccion</p>
+        <iframe class=mapa src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0332409429607!2d-75.58591928421487!3d6.25935179546938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44291ace0905c5%3A0xa82ebb8889ab4dae!2sUniversidad%20Cat%C3%B3lica%20Luis%20Amig%C3%B3%20-%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1652115887133!5m2!1ses!2sco" 
+        width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: "auto",
+     spaceBetween: 30,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+   });
+ </script>
+
+</body>
+</html>

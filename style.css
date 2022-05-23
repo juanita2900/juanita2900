@@ -1,0 +1,301 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    color: white;
+}
+
+nav {
+    background-color: #CEB1BE;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+nav .nav {
+    padding: .9em 0em;
+}
+
+
+nav .container ul li {
+    display: inline;
+    padding: .2em;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: white;
+    padding: .8em 1em;
+    border-radius: 10px;
+}
+
+nav .container ul li a:hover{
+    color: white;
+    background-color: #4C1036;
+}
+
+section .wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 95vh;
+    max-width: 1700px;
+    margin: auto;
+    font-size: 1.4em;
+}
+
+.bienvenida .down {
+    margin-top: 1em;
+}
+
+.bienvenida .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5em;
+    color: #4C1036;
+}
+
+.bienvenida .info a{
+    font-family: 'Yaldevi', sans-serif;
+    margin: 10px;
+    border: #4C1036 solid 2px;
+    border-radius: 8px ;
+    padding: 5px 10px;
+    color: #4C1036;
+    flex-basis: 0;
+}
+
+.bienvenida .info a:hover{
+    font-family: 'Yaldevi', sans-serif;
+    margin: 10px;
+    border: white solid 2px;
+    border-radius: 8px ;
+    padding: 5px 10px;
+    color: white;
+    background-color: #4C1036;
+}
+
+.servicios {
+    background-color: #E4B4BC;
+    width: 90%;
+    margin: auto;
+    border-radius: 1em;
+    color: white;
+}
+
+.servicios .wrap{
+    flex-direction: row-reverse;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.servicios .wrap .intro{
+    margin-left: 1.5em;
+}
+
+.servicios .swiper {
+    width: 250%;
+    height: 80%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #4C1036;
+    padding: 0.5em;
+    border-radius: 0.5em;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide:nth-child(1n) {
+    width: 70%;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    width: 50%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(4n) {
+    width: 70%;
+  }
+
+  .trabajos{
+    background-color: #4C1036;
+    width: 90%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+    color: white;
+    padding: 1em;
+  }
+
+  .trabajos .wrap{
+    flex-direction: column;
+    text-align: center;
+  }
+
+/*slider*/
+.trabajos .swiper {
+    width: 50%;
+    height: auto;
+    margin-top: 1em;
+}
+
+.trabajos .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    height: auto;
+    background-color: #E4B4BC;
+}
+
+.trabajos .galeria {
+    width: 100%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+      
+.trabajos .item {
+    width: 48%;
+    height: auto;
+    margin-bottom: 1%;
+}
+    
+.ubicame {
+      background-color: #E0CDD5;
+      width: 90%;
+      margin: auto;
+      color: #4C1036;
+      margin-bottom: 1em;
+      border-radius: 1em;
+}
+
+.mapa {
+    width: 100%;
+    height: 80%;
+}
+
+/* ##Dispositivo = Android, iPhone 6/7/8 - plus, x, 5/SE, Surface Duo (vertical) 320px to 730px */
+
+@media (min-width: 320px) and (max-width: 730px)  {
+
+    .container{
+        display: flex;
+        width: 70%;
+        max-width: 1700px;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    nav {
+        background-color: #CEB1BE;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        border-radius: 20px;
+        padding: 1em;
+    }
+
+    nav .container ul li a{
+        font-size: 1em;
+        color: white;
+        padding: .2em 1em;
+        border-radius: 10px;
+    }
+    
+    nav .container ul li a:hover{
+        color: white;
+        background-color: #4C1036;
+        padding: .2em;
+    }
+
+    .servicios .swiper {
+        width: 400%;
+        height: 20%;
+      }
+    
+    .ubicame {
+        background-color: #E0CDD5;
+        width: 90%;
+        margin: auto;
+        color: #4C1036;
+        margin-bottom: 1em;
+        border-radius: 1em;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 80%;
+    }
+}
+
+/* ##Dispositivo = iPad, iPad pro de 731px a 1024px */
+
+@media (min-width: 731px) and (max-width: 1024px) {
+    .servicios .swiper {
+        width: 300%;
+        height: 40%;
+      }
+    
+}
